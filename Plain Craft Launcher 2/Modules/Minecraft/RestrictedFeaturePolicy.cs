@@ -21,7 +21,7 @@ internal static class RestrictedFeaturePolicy
                 ? "Region.Feature.Unknown"
                 : "Region.Feature.Restricted"), HintType.Error);
         }
-        return false;
+        return true;
     }
 
     internal static void ThrowIfRestricted(string feature)

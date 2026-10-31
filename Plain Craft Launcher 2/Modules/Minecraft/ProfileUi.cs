@@ -217,7 +217,7 @@ public static class ProfileUi
         Common.RunInUi(() => Launcher.frmLaunchLeft.RefreshPage(true, type));
     }
 
-    private static List<IMyRadio> _GetAvailableProfileSelection(bool includeOthers) => includeOthers
+    private static List<IMyRadio> _GetAvailableProfileSelection(bool includeOthers) => includeOthers||true
         ? [
             new MyListItem { Title = Lang.Text("Launch.Account.Type.Microsoft"), Type = MyListItem.CheckType.RadioBox, SvgIcon = "lucide/shield-check" },
             new MyListItem { Title = Lang.Text("Launch.Account.Type.ThirdParty"), Type = MyListItem.CheckType.RadioBox, SvgIcon = "lucide/network" },
